@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
+
   width: 1100px;
   height: 293px;
 }
@@ -10,19 +11,24 @@
   column-gap: 32px;
   padding-left: 50px;
   text-transform: lowercase;
+  list-style-type: circle;
+  font-style: normal;
+  font-family: "Raleway", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
-  list-style-type: circle;
 }
 .li_main_page_header {
   list-style: none;
 }
 .address_header {
   font-family: "Raleway", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   max-width: 240px;
   justify-self: end;
-  padding-right: 50px;
+  margin-right: 50px;
   font-weight: 400;
+  font-style: normal;
 }
 .logo_header {
   width: 148px;
@@ -43,15 +49,16 @@
   display: flex;
   color: #ffffff;
   align-items: baseline;
-  justify-content: space-between;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0%;
-  word-spacing: 27px;
+  justify-content: space-evenly;
   padding: 0px 50px 50px 50px;
-
   z-index: 2;
+  gap: 107px;
+}
+.subline_text{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  word-spacing: 18px;
 }
 .button_cover {
   width: 256px;
@@ -68,33 +75,36 @@
 .heading_title {
   display: flex;
   flex-direction: column;
-  padding: 165px 50px 147px;
+  padding: 165px 50px 106px;
   gap: 20px;
   text-align: center;
   color: #ffffff;
   z-index: 2;
 }
 
-.accent_span {
+.heading_title {
   font-size: 100px;
   font-weight: 700;
   line-height: 100%;
-  letter-spacing: 30px;
-  font-weight: bold;
+  letter-spacing: 30px
 }
-.text_left {
+.accent_span{
   align-self: flex-start;
-  line-height: 115px;
-  text-align: center;
-  word-spacing: 5px;
+  line-height: 115%;
+  text-align: center;  
+  word-spacing: 5px; 
+  letter-spacing: 30%;
 }
 .text_center {
   align-self: center;
   text-align: center;
 }
-.text_right {
+.text_right{
   align-self: flex-end;
   text-align: right;
+}
+.no_cpasing{
+  letter-spacing: 0px;
 }
 .image_cover {
   position: absolute;
@@ -176,7 +186,7 @@
 .lots__look-more-link {
   display: block;
   text-underline-offset: 4px;
-  padding-top: 30px;
+  padding-top: 31px;
   color: black;
   font-size: 20px;
   font-weight: 400;
@@ -196,7 +206,7 @@
   width: 240px;
   height: 240px;
   display: flex;
-  justify-self: center;
+  margin-left: 47px;
   justify-content: center;
   align-items: center;
   margin-top: 35px;
@@ -208,7 +218,7 @@ img {
 .about_content {
   display: flex;
   flex-direction: column;
-  padding-top: 136px;
+  padding-top: 137px;
 }
 .about__title {
   font-weight: 700;
@@ -240,11 +250,17 @@ img {
   width: 1100px;
   height: 360px;
   padding: 180px 24px 0 24px;
+  font-style: normal;
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 .address_footer {
   padding-left: 26px;
   font-size: 18px;
   font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", Arial, sans-serif;
 }
 .nav_footer {
   display: flex;
@@ -277,11 +293,11 @@ img {
   width: 48px;
   height: 48px;
 }
-.links_cover_lots_card {
-  text-decoration: none;
-}
+
 .text-underline {
   /*Для ревьювеара.В некоторых случаях буквы или цифры заходили на нижнее подчеркивание под ссылками, этими действием подогнал под макет.Посчитал так будет правильней*/
   text-underline-offset: 4px;
 }
-
+.no_underline_text{
+  text-decoration: none;
+}
