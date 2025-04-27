@@ -252,14 +252,13 @@ img {
   grid-template-columns: auto 1fr auto;
   align-items: flex-start;
   width: 1100px;
-  padding-top: 181px;
+  padding: 181px 50px 82px 50px;
   font-style: normal;
   font-family: "Raleway", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
 .footer_address {
-  padding-left: 50px;
   max-width: 292px;
 }
 .nav_footer {
@@ -269,28 +268,21 @@ img {
 }
 .ul_footer {
   list-style: none;
-  padding-left: 32px;
-  padding-top: 1px;
 }
 .footer_link_on_main_page {
-  padding-left: 44px;
+  padding-left: 41px;
   text-decoration: none;
-}
-.footer_link_about_lots{
-  padding-left: 3px;
 }
 .text_decoration_none {
   text-decoration: none;
 }
 .footer_link_about_action {
-  padding-left: 23px;
+  padding-left: 19px;
 }
 .social_media_links_footer {
   display: flex;
   justify-content: center;
   gap: 48px;
-  margin-right: 50px;
-  margin-left: 35px;
   list-style: none;
 }
 .image_social_media_link_footer {
